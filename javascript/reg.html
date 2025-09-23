@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+</head>
+<body>
+    <header>
+        <h1>REGISTER</h1>
+    </header>
+    <main>
+        <form id="regform">
+            <label>Username:</label><br><input type="text" placeholder="Enter Username" id="name"><br>
+            <label>Email:</label><br><input type="email" placeholder="Enter Email" id="email"><br>
+            <label>Password:</label><br><input type="password" placeholder="Enter Password" id="password"><br>
+            <label>Number:</label><br><input type="tel" placeholder="Enter Phone number" id="mobile"><br>
+            <button type="submit">SUBMIT</button>
+        </form>
+    </main>
+    <script>
+        const form=document.getElementById("regform")
+        form.addEventListener("submit",function(e){
+            e.preventDefault()
+            const user=document.getElementById("name").value
+            const email=document.getElementById("email").value
+            const pass=document.getElementById("password").value
+            const num=document.getElementById("mobile").value
+            console.log("Registered Successfully")
+            console.log(user,email,pass,num)
+            form.reset()            
+        })
+    </script>
+</body>
+</html>

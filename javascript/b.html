@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<script>
+    getvalue();
+    
+    function getvalue(){
+    const a=Number(prompt("enter the a value"));
+    document.writeln(`a=${a}`);
+    
+    const b=Number(prompt("enter the b value"));
+    document.writeln(`b=${b}`);
+    }
+    
+    function add(){
+        alert(a+b)
+        getvalue();
+    }
+    function sub(){
+        alert(a-b)
+    }
+    function mul(){
+        alert(a*b)
+    }
+    function div(){
+        alert(a/b)
+    }
+</script>
+
+<body>
+    <br>
+    <button onclick="add()">ADD</button>
+    <button onclick="sub()">SUB</button>
+    <button onclick="mul()">MUL</button>
+    <button onclick="div()">DIV</button>
+</body>
+</html>

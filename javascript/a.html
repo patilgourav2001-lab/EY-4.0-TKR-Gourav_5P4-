@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        section{
+            display: flex;
+            justify-content: center;
+            margin-top: 5%;
+            border: 2px;
+            border-radius: 10px;
+            background-color: aquamarine;
+            margin-left: 15%;
+            margin-right: 15%;
+        }
+        article{
+            padding: 20px;
+            margin-left: 10px;
+            margin-right: 10px;
+        }
+    </style>
+</head>
+<body>
+    <section class="sec">
+        <article id="1">
+            <img src="dog.jpg" width="200px" height="200px">
+            <p>this is about dog.</p>
+            <button onclick="yellow()">Change</button>
+        </article>
+        <article id="2">
+            <img src="elephant.jpg" width="200px" height="200px">
+            <p>this is about elephant.</p>
+            <button onclick="grey()">Change</button>
+        </article>
+        <article id="3">
+            <img src="lion.jpg" width="200px" height="200px">
+            <p>this is about lion.</p>
+            <button onclick="orange()">Change</button>
+        </article>
+        <article id="4">
+            <img src="panda.jpg" width="200px" height="200px">
+            <p>this is about panda.</p>
+            <button onclick="blue()">Change</button>
+        </article>
+    </section>
+    <script>
+        function yellow(){
+            document.getElementById(1).style.backgroundColor="yellow"
+        }
+        function grey(){
+            document.getElementById(2).style.backgroundColor="grey"
+        }
+        function orange(){
+            document.getElementById(3).style.backgroundColor="orange"
+        }
+        function blue(){
+            document.getElementById(4).style.backgroundColor="lightblue"
+        }
+    </script>
+</body>
+</html>
